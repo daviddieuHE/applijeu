@@ -2,14 +2,16 @@ class Player:
 
     xp = 0
 
-    def __init__(self, pseudo='default', classe='default', lvl='default', xp='default', pv='default', pa ='default'):
-        self.pseudo = "koba"
-        self.classe = "ranger"
-        self.lvl = 1
-        self.xp = 0
-        self.pv = 100
-        self.pa = 15
+    def __init__(self, pseudo, lvl, xp, pv, pa):
+        assert len(pseudo) in range(3, 16), "Attribut 'pseudo' : le pseudo peut avoir entre 3 et 15 lettres"
+        self.pseudo = pseudo
+        self.lvl = lvl
+        self.xp = xp
+        self.pv = pv
+        self.pa = pa
 
+    def __str__(self):
+        return f"[pseudo : {self.pseudo} / lvl : {self.lvl}, xp : {self.xp}, pv : {self.pv}, pa : {self.pa}]"
 
     def lvl_up(self, xp):
         if xp >= 50:

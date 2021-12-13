@@ -3,6 +3,8 @@ from player.player import Player
 import random
 
 
+def creatPlayer():
+    p1 = Player("koba", 1, 0, 100, 15)
 
 def randomMob():
     i = random.randrange(0, 4)
@@ -18,9 +20,7 @@ def fight():
     pvMobTemp = Mobs.mobs_dic[i].pv
     paMobTemp = Mobs.mobs_dic[i].pa
 
-    pvPlayerTemp = Player.__init__(self).pv
-    paPlayerTemp = Player.__init__(self).pa
-
     print(pvMobTemp, paMobTemp)
-    print(pvPlayerTemp, paPlayerTemp)
 
+
+    Player.xp += 10
