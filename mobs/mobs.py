@@ -15,3 +15,14 @@ class Mobs:
         Mobs.mobs_dic[2] = Mobs("ogre", 3, 90, 30)
         Mobs.mobs_dic[3] = Mobs("witch", 1, 30, 10)
         Mobs.mobs_dic[4] = Mobs("dragon", 5, 300, 50)
+
+    def randomMob(self):
+        i = random.randrange(0, 4)
+        return i
+
+    def interaction():
+        i = randomMob()
+        print("vous vous apprêté à combatre un {} de niveau {} ayant {} pv et {} pa".format(Mobs.mobs_dic[i].name,
+                                                                                            Mobs.mobs_dic[i].lvl,
+                                                                                            Mobs.mobs_dic[i].pv,
+                                                                                            Mobs.mobs_dic[i].pa))

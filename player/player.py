@@ -18,3 +18,6 @@ class Player:
             self.lvl += 1
             self.pv += 50
             self.pa += 15
+
+    def fight_mob(self, mob):
+        return("")
