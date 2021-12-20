@@ -20,7 +20,5 @@ def fight():
     pvMobTemp = Mobs.mobs_dic[i].pv
     paMobTemp = Mobs.mobs_dic[i].pa
 
-    print(pvMobTemp, paMobTemp)
 
-
-    Player.xp += 10
+    print("{} de niveau {} attaque {} de niveau {}")

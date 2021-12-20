@@ -1,3 +1,5 @@
+import player
+import mobs
 class Mobs:
 
     mobs_dic = {}
@@ -26,3 +28,10 @@ class Mobs:
                                                                                             Mobs.mobs_dic[i].lvl,
                                                                                             Mobs.mobs_dic[i].pv,
                                                                                             Mobs.mobs_dic[i].pa))
+    def fight_player(self, player):
+        randomMobs()
+        print("{} attaque {}\n"
+              "{} perds {} pv".format(Mobs.mobs_dic[i].name, Player.pseudo))
+        print("il reste {} pv à {} et {} pv à {}".format(Mobs.mobs_dic[i].pv, Mobs.mobs_dic[i].name, ))
+
+    def  une fonction(ceci est un easter egg)

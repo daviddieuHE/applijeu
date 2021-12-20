@@ -1,3 +1,5 @@
+import mobs
+
 class Player:
 
     xp = 0
@@ -20,4 +22,7 @@ class Player:
             self.pa += 15
 
     def fight_mob(self, mob):
-        return("")
+        randomMobs()
+        print("{} attaque {}\n"
+              "{} perds {} pv".format(Mobs.mobs_dic[i].name, Player.pseudo))
+        print("il reste {} pv à {} et {} pv à {}".format(Mobs.mobs_dic[i].pv, Mobs.mobs_dic[i].name, ))
