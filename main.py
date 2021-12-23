@@ -1,10 +1,11 @@
-from mobs.mobs import Mobs
-from gameplay import gameplay
-from player import player
-
+from src.gameplay import Gameplay
+from src.player import Player
 
 if __name__ == '__main__':
-    Mobs.creatMobs()
-    gameplay.interaction()
-    gameplay.fight()
-    gameplay.creatPlayer()
+    try:
+        gp = Gameplay(Player.creat_player())
+
+        while True:
+            gp.interaction(gp.ask_combat())
+    except Exception as e:
+        print(str(e))
